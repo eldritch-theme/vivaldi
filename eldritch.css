@@ -13,3 +13,7 @@
     drop-shadow(0 1px 0 rgba(4, 209, 249, 0.75))
     drop-shadow(0 -1px 0 rgba(4, 209, 249, 0.75)) !important;
 }
+
+.ToolbarButton-Button {
+  color: #ebfafa !important;
+}

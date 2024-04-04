@@ -13,7 +13,7 @@ Main Theme repo can be found [here](https://github.com/eldritch-theme/eldritch)
 
 ### Installation
 1. From theme store:
-   - https://themes.vivaldi.net/themes/zrnvL65r7L4/versions/2 and click `Download theme`
+   - https://themes.vivaldi.net/themes/zrnvL65r7L4 and click `Download theme`
 2. From source:
    1. Download the `eldritch.zip` and place it somewhere you can find it.
    2. In Vivaldi -> Settings -> Themes -> Open Theme... -> Select the `eldritch.zip` file.

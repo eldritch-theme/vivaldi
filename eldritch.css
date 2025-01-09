@@ -1,19 +1,74 @@
+/*
+TABS
+*/
+/* non active tab text */
 .tab-header {
   padding-top: 5px;
   color: #04d1f9;
 }
+/* active tab text */
 .tab.active .tab-header {
   color: #37f499 !important;
+}
+.transparent-tabbar .tab.active .tab-header .favicon:not(.svg),
+.theme-dark .tab.active .tab-header .favicon:not(.svg) {
+  filter: unset !important;
+}
+/* All tabs */
+#tabs-container .tab {
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgb(0, 255, 255, 0.25);
+  border-bottom-color: rgba(55, 244, 153, 0.25);
+  border-top-color: transparent;
+}
+/* Active tab */
+#tabs-container .tab.active {
+  border-width: 1px 1px 1px 1px;
+  border-color: rgb(0, 255, 255);
+  border-bottom-color: #37f499;
+}
+#tabs-subcontainer .tab.active .tab-header {
+  padding-left: 5px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+/* Hibernated Tabs */
+#tabs-container .tab.isdiscarded .favicon:before {
+  content: "zzZ";
+  font-size: 10px;
+  position: absolute;
+  top: 8px;
+  left: -1px;
+  z-index: 1;
+  background-image: linear-gradient(
+    0deg,
+    hsla(355.94, 82.61%, 68.43%, 0.75),
+    hsla(355.94, 82.61%, 68.43%, 0.75)
+  );
+  width: 18px;
+  padding-left: 3px;
+  color: #ffffff;
   font-weight: bold;
 }
+#tabs-container .tab.tab-group.isdiscarded .favicon:before {
+  font-size: 9px;
+  top: 10px;
+}
+#tabs-container .tab.isdiscarded .favicon,
+#tabs-container .tab.isdiscarded:hover .favicon {
+  filter: none !important;
+}
+/*
+END OF TABS
+*/
 
-.tab.active .tab-header .favicon:not(.svg) {
-  filter: drop-shadow(1px 0 0 rgba(4, 209, 249, 0.75))
-    drop-shadow(-1px 0 0 rgba(4, 209, 249, 0.75))
-    drop-shadow(0 1px 0 rgba(4, 209, 249, 0.75))
-    drop-shadow(0 -1px 0 rgba(4, 209, 249, 0.75)) !important;
+/* Title bar */
+#browser:not(.address-top) > #header {
+  box-shadow: none !important;
 }
 
+/* affects all toolbar buttons */
 .ToolbarButton-Button {
-  color: #ebfafa !important;
+  color: #04d1f9 !important;
 }
